@@ -1,0 +1,34 @@
+{
+  "translation": {
+    "startButton": "Get Started",
+    "appMainText": "Create Scoreboards for your card games",
+
+    "selectRounds": "Select Rounds",
+    "playerAmount": "Player Amount",
+    "low": "Lowest score wins",
+    "high": "Highest score wins",
+    "playerNamesButton": "Enter players name",
+    "player": "Player",
+    "close": "Close",
+    "start": "Start",
+
+    "round": "Round",
+    "score": "Score",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "current": "Current Scores",
+    "final": "Result",
+    "rank": "Rank",
+    "deciderInfoLow": "The Player with lowest score wins",
+    "deciderInfoHigh": "The Player with highest score wins",
+    "playAgain": "Play Again",
+    "congratualtions": "Congratualtions",
+    "deuce": "Deuce",
+    "winner": "Winner",
+
+    "date": "Date",
+    "delete": "Delete",
+    "empty": "It looks like you haven't played any games yet."
+  }
+}
