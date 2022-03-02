@@ -6,9 +6,8 @@ import PlayerItem from "../components/PlayerItem";
 import Colors from "../constants/Colors";
 
 const GameHistoryScreen = (props) => {
-  const { t } = useTranslation();
-
   const gameData = JSON.parse(props.navigation.getParam("scoreboardScores"));
+  const { t } = useTranslation();
 
   const scores = gameData.map((player, index) => {
     return (
@@ -71,6 +70,7 @@ const styles = StyleSheet.create({
   },
   body: {
     width: "85%",
+    alignItems: "center",
     backgroundColor: Colors.white,
     padding: 16,
     borderRadius: 8,

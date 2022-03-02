@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import CustomButton from "../components/CustomButton";
 import Colors from "../constants/Colors";
-const background = require("../assets/Cards.jpg");
+const background = require("../assets/Cards.png");
 
 const ActiveScoreboardsScreen = (props) => {
   const { t } = useTranslation();
@@ -50,6 +50,8 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     marginBottom: 60,
+    width: "100%",
+    height: "100%",
   },
   title: {
     fontSize: 24,

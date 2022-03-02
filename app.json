@@ -4,12 +4,7 @@
     "slug": "notes4games",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "icon": "./assets/android/mipmap-hdpi/ic_launcher.png",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,17 +12,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kalingkarlsson.notes4games"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/android/mipmap-hdpi/ic_launcher_foreground.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.kalingkarlsson.notes4games"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#FFFFFF",
+      "barStyle": "dark-content",
+      "translucent": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/android/ic_launcher-web.png"
     },
-    "description": "Version 1 of my application Notes4Games.\nMVP => scoreboard working nicely, although bug on android for scrollview"
+    "description": "Version 1 of Notes4Games."
   }
 }

@@ -29,8 +29,6 @@ const LANGUAGE_DETECTOR = {
         callback(findBestAvailableLanguage || "en");
         return;
       }
-      console.log(language);
-      console.log("here baby", Localization.locale);
       callback(language);
     });
   },

@@ -1,15 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  StyleSheet,
-  Platform,
-  View,
-  Text,
-  Modal,
-  Alert,
-  TextInput,
-  ScrollView,
-  KeyboardAvoidingView,
-} from "react-native";
+import { StyleSheet, Platform, View, Text, Modal, TextInput, ScrollView, KeyboardAvoidingView } from "react-native";
 import RadioGroup from "react-native-radio-buttons-group";
 import DropDownPicker from "react-native-dropdown-picker";
 import { useTranslation } from "react-i18next";
@@ -193,7 +183,9 @@ const NewScoreboardScreen = (props) => {
                 {textInputs.map((v, index) => {
                   return (
                     <View style={{ flexDirection: "column" }} key={index}>
-                      <Text>{t("player")} {index + 1} </Text>
+                      <Text>
+                        {t("player")} {index + 1}{" "}
+                      </Text>
                       <TextInput
                         onChangeText={(text) => handleChange({ text, index })}
                         value={values.textArray[index]}
@@ -215,7 +207,11 @@ const NewScoreboardScreen = (props) => {
               </ScrollView>
               <View style={styles.buttonContainer}>
                 <View style={[styles.button, styles.buttonClose]}>
-                  <CustomButton style={styles.textStyle} title={t("close")} onPress={() => setModalVisible(!modalVisible)} />
+                  <CustomButton
+                    style={styles.textStyle}
+                    title={t("close")}
+                    onPress={() => setModalVisible(!modalVisible)}
+                  />
                 </View>
                 <View
                   style={[
